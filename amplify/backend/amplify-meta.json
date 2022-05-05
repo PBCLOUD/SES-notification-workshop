@@ -34,7 +34,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifysesemail-dev-113402-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apiamplifysesemail"
       },
-      "lastPushTimeStamp": "2022-05-05T13:04:22.104Z",
+      "lastPushTimeStamp": "2022-05-05T14:52:49.927Z",
       "lastPushDirHash": "ghnHuG70oV9H6qJf5DLPJB2pPBQ="
     }
   },
@@ -65,7 +65,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifysesemail-dev-113402-deployment/amplify-cfn-templates/function/amplifysesemail482ab9d9-cloudformation-template.json",
         "logicalId": "functionamplifysesemail482ab9d9"
       },
-      "lastPushTimeStamp": "2022-05-05T13:04:22.201Z",
+      "lastPushTimeStamp": "2022-05-05T14:52:49.942Z",
       "output": {
         "Region": "us-east-1",
         "Arn": "arn:aws:lambda:us-east-1:114693697227:function:amplifysesemail482ab9d9-dev",

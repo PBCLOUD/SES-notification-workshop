@@ -1,34 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![AWS SES Notification With AWS Amplify Workshop](./src/assets//Meta-Image.png)
 
-## Getting Started
+# AWS SES Notification With AWS Amplify Workshop
 
-First, run the development server:
+This project is about how to set up a full-stack serverless ReactJS application using AWS Amplify with AWS SES to send notification.
+
+Full details can be found in Blog Posts Referance.
+
+## Blog Posts Reference
+
+| Blog Post  
+| -----------------
+| [The Complete Guide to Implement Social Login With AWS Amplify](https://www.prplbx.com/resources/blog/social-login-with-aws-amplify-guide)
+
+## Serverless Architecture Guide
+
+![arthitecture guide](./src/assets//architecturediagram.png)
+
+## Tech Stack
+
+### Front End Development 💻
+
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+
+### Back End Development 📚
+
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+
+### Serverless & Cloud Development 🚀
+
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![AmazonDynamoDB](https://img.shields.io/badge/-AWS%20Amplify-blue?style=for-the-badge&logo=AWS%20Amplify&logoColor=white) ![AmazonDynamoDB](https://img.shields.io/badge/-AWS%20Lambda-informational?style=for-the-badge) ![AmazonDynamoDB](https://img.shields.io/badge/-Amazon%20Cognito-important?style=for-the-badge)
+
+### CI/CD & Hosting & Tools 📂
+
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Amplify](https://img.shields.io/badge/-AWS%20Amplify-blue?style=for-the-badge&logo=AWS%20Amplify&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
+## Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
+  git clone https://github.com/PBCLOUD/SES-notification-workshop.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+  cd SES-notification-workshop
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Install dependencies
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+  npm install
+  npm install -g @aws-amplify/cli
+```
 
-## Learn More
+Initialize AWS Environment
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+  amplify init
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Follow instructions on blog post
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+| [The Complete Guide to Implement Social Login With AWS Amplify](https://www.prplbx.com/resources/blog/social-login-with-aws-amplify-guide)
 
-## Deploy on Vercel
+Start the server
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+  npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Feedback
+
+If you have any feedback, please reach out to us at kaan@prplbx.com
