@@ -14,9 +14,9 @@
     "categories": {
       "function": {
         "amplifysesemail482ab9d9": {
-          "sesEmail": "kaan@prplbx.com",
           "deploymentBucketName": "amplify-amplifysesemail-dev-113402-deployment",
-          "s3Key": "amplify-builds/amplifysesemail482ab9d9-5164452b7244504a7566-build.zip"
+          "s3Key": "amplify-builds/amplifysesemail482ab9d9-5164452b7244504a7566-build.zip",
+          "sesEmail": "kaan@prplbx.com"
         }
       }
     }

@@ -1,12 +1,12 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createCanditate = /* GraphQL */ `
-  mutation CreateCanditate(
-    $input: CreateCanditateInput!
-    $condition: ModelCanditateConditionInput
+export const createCandidate = /* GraphQL */ `
+  mutation CreateCandidate(
+    $input: CreateCandidateInput!
+    $condition: ModelCandidateConditionInput
   ) {
-    createCanditate(input: $input, condition: $condition) {
+    createCandidate(input: $input, condition: $condition) {
       id
       name
       email
@@ -15,12 +15,12 @@ export const createCanditate = /* GraphQL */ `
     }
   }
 `;
-export const updateCanditate = /* GraphQL */ `
-  mutation UpdateCanditate(
-    $input: UpdateCanditateInput!
-    $condition: ModelCanditateConditionInput
+export const updateCandidate = /* GraphQL */ `
+  mutation UpdateCandidate(
+    $input: UpdateCandidateInput!
+    $condition: ModelCandidateConditionInput
   ) {
-    updateCanditate(input: $input, condition: $condition) {
+    updateCandidate(input: $input, condition: $condition) {
       id
       name
       email
@@ -29,12 +29,12 @@ export const updateCanditate = /* GraphQL */ `
     }
   }
 `;
-export const deleteCanditate = /* GraphQL */ `
-  mutation DeleteCanditate(
-    $input: DeleteCanditateInput!
-    $condition: ModelCanditateConditionInput
+export const deleteCandidate = /* GraphQL */ `
+  mutation DeleteCandidate(
+    $input: DeleteCandidateInput!
+    $condition: ModelCandidateConditionInput
   ) {
-    deleteCanditate(input: $input, condition: $condition) {
+    deleteCandidate(input: $input, condition: $condition) {
       id
       name
       email

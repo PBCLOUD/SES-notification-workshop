@@ -1,9 +1,9 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const onCreateCanditate = /* GraphQL */ `
-  subscription OnCreateCanditate {
-    onCreateCanditate {
+export const onCreateCandidate = /* GraphQL */ `
+  subscription OnCreateCandidate {
+    onCreateCandidate {
       id
       name
       email
@@ -12,9 +12,9 @@ export const onCreateCanditate = /* GraphQL */ `
     }
   }
 `;
-export const onUpdateCanditate = /* GraphQL */ `
-  subscription OnUpdateCanditate {
-    onUpdateCanditate {
+export const onUpdateCandidate = /* GraphQL */ `
+  subscription OnUpdateCandidate {
+    onUpdateCandidate {
       id
       name
       email
@@ -23,9 +23,9 @@ export const onUpdateCanditate = /* GraphQL */ `
     }
   }
 `;
-export const onDeleteCanditate = /* GraphQL */ `
-  subscription OnDeleteCanditate {
-    onDeleteCanditate {
+export const onDeleteCandidate = /* GraphQL */ `
+  subscription OnDeleteCandidate {
+    onDeleteCandidate {
       id
       name
       email

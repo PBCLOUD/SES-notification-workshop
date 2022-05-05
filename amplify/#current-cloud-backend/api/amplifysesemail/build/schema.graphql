@@ -1,5 +1,5 @@
 
-type Canditate {
+type Candidate {
   id: ID!
   name: String!
   email: AWSEmail!
@@ -98,58 +98,58 @@ enum ModelSortDirection {
   DESC
 }
 
-type ModelCanditateConnection {
-  items: [Canditate]!
+type ModelCandidateConnection {
+  items: [Candidate]!
   nextToken: String
 }
 
-input ModelCanditateFilterInput {
+input ModelCandidateFilterInput {
   id: ModelIDInput
   name: ModelStringInput
   email: ModelStringInput
-  and: [ModelCanditateFilterInput]
-  or: [ModelCanditateFilterInput]
-  not: ModelCanditateFilterInput
+  and: [ModelCandidateFilterInput]
+  or: [ModelCandidateFilterInput]
+  not: ModelCandidateFilterInput
 }
 
 type Query {
-  getCanditate(id: ID!): Canditate
-  listCanditates(filter: ModelCanditateFilterInput, limit: Int, nextToken: String): ModelCanditateConnection
+  getCandidate(id: ID!): Candidate
+  listCandidates(filter: ModelCandidateFilterInput, limit: Int, nextToken: String): ModelCandidateConnection
 }
 
-input ModelCanditateConditionInput {
+input ModelCandidateConditionInput {
   name: ModelStringInput
   email: ModelStringInput
-  and: [ModelCanditateConditionInput]
-  or: [ModelCanditateConditionInput]
-  not: ModelCanditateConditionInput
+  and: [ModelCandidateConditionInput]
+  or: [ModelCandidateConditionInput]
+  not: ModelCandidateConditionInput
 }
 
-input CreateCanditateInput {
+input CreateCandidateInput {
   id: ID
   name: String!
   email: AWSEmail!
 }
 
-input UpdateCanditateInput {
+input UpdateCandidateInput {
   id: ID!
   name: String
   email: AWSEmail
 }
 
-input DeleteCanditateInput {
+input DeleteCandidateInput {
   id: ID!
 }
 
 type Mutation {
-  createCanditate(input: CreateCanditateInput!, condition: ModelCanditateConditionInput): Canditate
-  updateCanditate(input: UpdateCanditateInput!, condition: ModelCanditateConditionInput): Canditate
-  deleteCanditate(input: DeleteCanditateInput!, condition: ModelCanditateConditionInput): Canditate
+  createCandidate(input: CreateCandidateInput!, condition: ModelCandidateConditionInput): Candidate
+  updateCandidate(input: UpdateCandidateInput!, condition: ModelCandidateConditionInput): Candidate
+  deleteCandidate(input: DeleteCandidateInput!, condition: ModelCandidateConditionInput): Candidate
 }
 
 type Subscription {
-  onCreateCanditate: Canditate @aws_subscribe(mutations: ["createCanditate"])
-  onUpdateCanditate: Canditate @aws_subscribe(mutations: ["updateCanditate"])
-  onDeleteCanditate: Canditate @aws_subscribe(mutations: ["deleteCanditate"])
+  onCreateCandidate: Candidate @aws_subscribe(mutations: ["createCandidate"])
+  onUpdateCandidate: Candidate @aws_subscribe(mutations: ["updateCandidate"])
+  onDeleteCandidate: Candidate @aws_subscribe(mutations: ["deleteCandidate"])
 }
 

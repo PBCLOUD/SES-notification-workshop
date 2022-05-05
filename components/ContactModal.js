@@ -36,7 +36,7 @@ export const ContactModal = () => {
             bg: 'green.500',
           }}
           onClick={onOpen}>
-          I&apos;m Interested!
+          Send Nofitication!
         </Button>
 
         <Box>
@@ -52,10 +52,10 @@ export const ContactModal = () => {
             fontSize={'lg'}
             fontFamily={'Caveat'}
             position={'absolute'}
-            right={'-125px'}
+            right={'-100px'}
             top={'-15px'}
             transform={'rotate(10deg)'}>
-            Get started here
+            Click here
           </Text>
         </Box>
 

@@ -68,7 +68,7 @@ export const ContactForm = ({ initialRef, onClose }) => {
 
   return (
     <>
-      <ModalHeader>Upload Contact Form</ModalHeader>
+      <ModalHeader>Fill the Form</ModalHeader>
       <ModalCloseButton />
       <form onSubmit={handleContactFormSubmit}>
         <ModalBody pb={6}>
@@ -76,7 +76,7 @@ export const ContactForm = ({ initialRef, onClose }) => {
             <FormLabel>Name</FormLabel>
             <Input
               ref={initialRef}
-              placeholder='Naruto Uzumaki'
+              placeholder='Isaac Newton'
               value={formState.name}
               onChange={(e) =>
                 setFormState({ ...formState, name: e.target.value })

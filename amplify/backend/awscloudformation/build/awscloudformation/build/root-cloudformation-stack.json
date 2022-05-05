@@ -161,7 +161,7 @@
           "DynamoDBBillingMode": "PAY_PER_REQUEST",
           "DynamoDBEnableServerSideEncryption": false,
           "S3DeploymentBucket": "amplify-amplifysesemail-dev-113402-deployment",
-          "S3DeploymentRootKey": "amplify-appsync-files/1a9d77bad33b64c7da6ff96c20c681c0e2d05f4a",
+          "S3DeploymentRootKey": "amplify-appsync-files/189ed08bc64aac19b5aba0b87f63eb08d7cee8f0",
           "env": "dev"
         }
       }
@@ -171,9 +171,9 @@
       "Properties": {
         "TemplateURL": "https://s3.amazonaws.com/amplify-amplifysesemail-dev-113402-deployment/amplify-cfn-templates/function/amplifysesemail482ab9d9-cloudformation-template.json",
         "Parameters": {
-          "sesEmail": "kaan@prplbx.com",
           "deploymentBucketName": "amplify-amplifysesemail-dev-113402-deployment",
           "s3Key": "amplify-builds/amplifysesemail482ab9d9-5164452b7244504a7566-build.zip",
+          "sesEmail": "kaan@prplbx.com",
           "apiamplifysesemailGraphQLAPIIdOutput": {
             "Fn::GetAtt": [
               "apiamplifysesemail",
