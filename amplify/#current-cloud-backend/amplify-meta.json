@@ -1,0 +1,78 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifysesemail-dev-113402-authRole",
+      "UnauthRoleArn": "arn:aws:iam::114693697227:role/amplify-amplifysesemail-dev-113402-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::114693697227:role/amplify-amplifysesemail-dev-113402-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplifysesemail-dev-113402-deployment",
+      "UnauthRoleName": "amplify-amplifysesemail-dev-113402-unauthRole",
+      "StackName": "amplify-amplifysesemail-dev-113402",
+      "StackId": "arn:aws:cloudformation:us-east-1:114693697227:stack/amplify-amplifysesemail-dev-113402/1fd2b220-cc4e-11ec-83e4-0ac3ac5bed79",
+      "AmplifyAppId": "d2lba9lrjqkf28"
+    }
+  },
+  "api": {
+    "amplifysesemail": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "rizl4reqtzgmzjkdoqhjyslliy",
+        "GraphQLAPIEndpointOutput": "https://sexcisnf35drzadtms3veqtu4u.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-2akock4uovbyrnzldg7szxnsj4"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifysesemail-dev-113402-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiamplifysesemail"
+      },
+      "lastPushTimeStamp": "2022-05-05T13:04:22.104Z",
+      "lastPushDirHash": "ghnHuG70oV9H6qJf5DLPJB2pPBQ="
+    }
+  },
+  "function": {
+    "amplifysesemail482ab9d9": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [
+        {
+          "category": "api",
+          "resourceName": "amplifysesemail",
+          "attributes": [
+            "GraphQLAPIIdOutput",
+            "GraphQLAPIEndpointOutput"
+          ]
+        }
+      ],
+      "lastBuildTimeStamp": "2022-05-05T13:02:09.320Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2022-05-05T13:02:09.412Z",
+      "distZipFilename": "amplifysesemail482ab9d9-5164452b7244504a7566-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-amplifysesemail-dev-113402-deployment",
+        "s3Key": "amplify-builds/amplifysesemail482ab9d9-5164452b7244504a7566-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifysesemail-dev-113402-deployment/amplify-cfn-templates/function/amplifysesemail482ab9d9-cloudformation-template.json",
+        "logicalId": "functionamplifysesemail482ab9d9"
+      },
+      "lastPushTimeStamp": "2022-05-05T13:04:22.201Z",
+      "output": {
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:114693697227:function:amplifysesemail482ab9d9-dev",
+        "Name": "amplifysesemail482ab9d9-dev",
+        "LambdaExecutionRole": "amplifysesemailLambdaRoleaad95008-dev"
+      },
+      "lastPushDirHash": "DW78MBD6Xs3Vvmj9uIJy8Ohc7Go="
+    }
+  }
+}

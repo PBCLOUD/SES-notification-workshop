@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "amplifysesemail",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-amplifysesemail-dev-113402-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/189ed08bc64aac19b5aba0b87f63eb08d7cee8f0"
+}

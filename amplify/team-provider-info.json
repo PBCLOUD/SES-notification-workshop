@@ -1,0 +1,24 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifysesemail-dev-113402-authRole",
+      "UnauthRoleArn": "arn:aws:iam::114693697227:role/amplify-amplifysesemail-dev-113402-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::114693697227:role/amplify-amplifysesemail-dev-113402-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplifysesemail-dev-113402-deployment",
+      "UnauthRoleName": "amplify-amplifysesemail-dev-113402-unauthRole",
+      "StackName": "amplify-amplifysesemail-dev-113402",
+      "StackId": "arn:aws:cloudformation:us-east-1:114693697227:stack/amplify-amplifysesemail-dev-113402/1fd2b220-cc4e-11ec-83e4-0ac3ac5bed79",
+      "AmplifyAppId": "d2lba9lrjqkf28"
+    },
+    "categories": {
+      "function": {
+        "amplifysesemail482ab9d9": {
+          "deploymentBucketName": "amplify-amplifysesemail-dev-113402-deployment",
+          "s3Key": "amplify-builds/amplifysesemail482ab9d9-5164452b7244504a7566-build.zip",
+          "sesEmail": "kaan@prplbx.com"
+        }
+      }
+    }
+  }
+}

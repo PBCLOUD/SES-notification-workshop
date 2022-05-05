@@ -19,8 +19,8 @@ const AppContainer = ({ children }) => {
     <>
       <Head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
-          rel="stylesheet"
+          href='https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap'
+          rel='stylesheet'
         />
       </Head>
 
@@ -29,8 +29,7 @@ const AppContainer = ({ children }) => {
           as={Box}
           textAlign={'center'}
           spacing={{ base: 8, md: 14 }}
-          py={{ base: 20, md: 36 }}
-        >
+          py={{ base: 20, md: 36 }}>
           {children}
         </Stack>
       </Container>
